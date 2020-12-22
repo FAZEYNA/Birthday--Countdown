@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    box-sizing: border-box;  /*Gérer les débordements**/
+}
+
+body{
+    margin : 0;
+    padding : 0;
+    height: 100vh;
+    color: #fff;
+}
+
+body *{ /*TOUT CE QUON A ECRIT DANS LE BODY*/
+    z-index: 1;
+}
+
+.home-area{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('img/april-pethybridge-_IN4QCfBqmc-unsplash\ \(1\).jpg');
+    height: 100vh;
+    width: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 25% 75%;
+    overflow: hidden;
+}
+
+h2, h4, h3{
+    text-align: center;
+}
+
+.birthday{
+    display: none;
+    transform: scale(2);
+    align-items: center;
+    justify-content: center;
+}
+
+.time{
+    display: flex; /*Le contenu devient flexible*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.time h2{
+    margin: 0 0 5px;
+}
+
+.loading{
+    display: none;
+}
+
+#error{
+    color: red;
+    display: none;
+}
+
+.countdown div{
+    display: inline-block;
+}
+
+

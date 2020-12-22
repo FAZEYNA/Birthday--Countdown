@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIRTHDAY CALCULATOR</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="home-area" id="particles-js">
+        <div class="container">
+            <h2>BIRTHDAY COUNTDOWN</h2>
+
+            <div class="champ mt-5" id="champ">
+                <h3 id="error">WRONG DATE !</h3>
+                <h4>Enter your birth date</h4>
+
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for=""></label>
+                            <input type="date" class="form-control" id="birthDate" name="birthDate" >
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-outline-primary btn-block mt-3" name="calculate" id="calculate" value="Calculate"/>
+            </div>
+
+            <center><img class="loading" id="loading" src="img/loading_transparent.gif" width="20%"></center>
+
+            <div class="birthday mt-5 align-self-center" id="birthday">
+                <h3 id="happyBDay">Your Birthday is in :</h3>
+                <div class="countdown mt-5" id="countdown">
+                    <div class="time">
+                        <h2 id="months">00</h2>
+                        <small>months</small>
+                    </div>
+                    <div class="time">
+                        <h2 id="weeks">00</h2>
+                        <small>weeks</small>
+                    </div>
+                    <div class="time">
+                        <h2 id="days">00</h2>
+                        <small>days</small>
+                    </div>
+                    <div class="time">
+                        <h2 id="hours">00</h2>
+                        <small>hours</small>
+                    </div>
+                    <div class="time">
+                        <h2 id="minutes">00</h2>
+                        <small>minutes</small>
+                    </div>
+                    <div class="time">
+                        <h2 id="seconds">00</h2>
+                        <small>seconds</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
